@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__godot-mcp__node_get_properties",
+      "mcp__godot-mcp__node_set_property"
+    ]
+  }
+}

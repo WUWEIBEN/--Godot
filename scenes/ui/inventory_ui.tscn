@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://bm4xa0k2kmgv4"]
+
+[ext_resource type="PackedScene" uid="uid://owjjlj5kfts4" path="res://scenes/ui/equipment_slot_ui.tscn" id="1_4ycse"]
+[ext_resource type="Script" uid="uid://hfio1jp46kbu" path="res://scenes/ui/inventory_ui.gd" id="1_drsq2"]
+[ext_resource type="PackedScene" uid="uid://c3amdb75u7f1y" path="res://scenes/ui/slot_ui.tscn" id="2_drsq2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nuief"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.26666668, 0.26666668, 0.26666668, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="InventoryUI" type="PanelContainer" unique_id=1926822308]
+theme_override_styles/panel = SubResource("StyleBoxFlat_nuief")
+script = ExtResource("1_drsq2")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1153144426]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=443369925]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1275266226]
+layout_mode = 2
+text = "-- 装备 --"
+horizontal_alignment = 1
+
+[node name="EquipmentRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1149379166]
+layout_mode = 2
+alignment = 1
+
+[node name="EquipmentSlotUI" parent="MarginContainer/VBoxContainer/EquipmentRow" unique_id=890474962 instance=ExtResource("1_4ycse")]
+layout_mode = 2
+slot_key = "weapon"
+slot_label = "武器"
+
+[node name="EquipmentSlotUI2" parent="MarginContainer/VBoxContainer/EquipmentRow" unique_id=1967969976 instance=ExtResource("1_4ycse")]
+layout_mode = 2
+slot_key = "armor"
+slot_label = "护甲"
+
+[node name="EquipmentSlotUI3" parent="MarginContainer/VBoxContainer/EquipmentRow" unique_id=1877016679 instance=ExtResource("1_4ycse")]
+layout_mode = 2
+slot_key = "battery"
+slot_label = "电池"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=213196150]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer" unique_id=869003554]
+layout_mode = 2
+text = "-- 背包--"
+horizontal_alignment = 1
+
+[node name="BackpackGrid" type="GridContainer" parent="MarginContainer/VBoxContainer" unique_id=1299367319]
+layout_mode = 2
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 4
+columns = 4
+
+[node name="SlotUI2" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1306938082 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1618963891 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI4" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=272066489 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI5" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1928816532 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI6" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=827567282 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI7" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1771499349 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI8" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1136188578 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI9" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=326793546 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI10" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1914656715 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI11" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=2111838429 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI12" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1605161981 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI13" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=800376771 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI14" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=2109429077 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI15" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1761193427 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI16" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=1134829903 instance=ExtResource("2_drsq2")]
+layout_mode = 2
+
+[node name="SlotUI3" parent="MarginContainer/VBoxContainer/BackpackGrid" unique_id=970687239 instance=ExtResource("2_drsq2")]
+layout_mode = 2

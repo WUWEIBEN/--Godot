@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://kqq053uwpcul"]
+
+[ext_resource type="Script" uid="uid://coosaygha8d54" path="res://scripts/item_data.gd" id="1_dibto"]
+[ext_resource type="Texture2D" uid="uid://celvk40ui50ut" path="res://resource/equipment/pick_axe.png" id="1_v6uea"]
+
+[resource]
+script = ExtResource("1_dibto")
+item_name = "矿稿"
+description = "一把趁手的矿稿，能敲点什么"
+icon_color = Color(0.36659443, 0.36659467, 0.36659443, 1)
+icon = ExtResource("1_v6uea")
+metadata/_custom_type_script = "uid://coosaygha8d54"

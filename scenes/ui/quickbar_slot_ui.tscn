@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://xkxhiubojwkr"]
+
+[ext_resource type="Script" uid="uid://bwthgyg80ls8w" path="res://scenes/ui/quickbar_slot_ui.gd" id="1_q0qrb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0qrb"]
+bg_color = Color(0.2, 0.2, 0.2, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.33333334, 0.33333334, 0.33333334, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="QuickBarSlotUI" type="PanelContainer" unique_id=210397811]
+theme_override_styles/panel = SubResource("StyleBoxFlat_q0qrb")
+script = ExtResource("1_q0qrb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=337967008]
+layout_mode = 2
+
+[node name="QuickBarHolder" type="TextureRect" parent="VBoxContainer" unique_id=1019500235]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Index" type="Label" parent="VBoxContainer" unique_id=526762067]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_alignment = 1

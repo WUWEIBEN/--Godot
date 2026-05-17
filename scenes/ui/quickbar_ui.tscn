@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://c2g5b04r7oixa"]
+
+[ext_resource type="Script" uid="uid://dpg688il1adbx" path="res://scenes/ui/quickbar_ui.gd" id="1_kdfsv"]
+[ext_resource type="PackedScene" uid="uid://xkxhiubojwkr" path="res://scenes/ui/quickbar_slot_ui.tscn" id="2_ya0jh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdfsv"]
+bg_color = Color(0.2, 0.2, 0.2, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.33333334, 0.33333334, 0.33333334, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="QuickBarUI" type="PanelContainer" unique_id=1259954796]
+theme_override_styles/panel = SubResource("StyleBoxFlat_kdfsv")
+script = ExtResource("1_kdfsv")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=457003669]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="QuickBarRow" type="HBoxContainer" parent="MarginContainer" unique_id=1798226050]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="QuickBarSlotUI" parent="MarginContainer/QuickBarRow" unique_id=210397811 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
+
+[node name="QuickBarSlotUI2" parent="MarginContainer/QuickBarRow" unique_id=380439601 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
+
+[node name="QuickBarSlotUI3" parent="MarginContainer/QuickBarRow" unique_id=1942599410 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
+
+[node name="QuickBarSlotUI4" parent="MarginContainer/QuickBarRow" unique_id=1015558651 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
+
+[node name="QuickBarSlotUI5" parent="MarginContainer/QuickBarRow" unique_id=1088619737 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
+
+[node name="QuickBarSlotUI6" parent="MarginContainer/QuickBarRow" unique_id=1987627961 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
+
+[node name="QuickBarSlotUI7" parent="MarginContainer/QuickBarRow" unique_id=1201588134 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
+
+[node name="QuickBarSlotUI8" parent="MarginContainer/QuickBarRow" unique_id=1482804396 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
+
+[node name="QuickBarSlotUI9" parent="MarginContainer/QuickBarRow" unique_id=1211897137 instance=ExtResource("2_ya0jh")]
+layout_mode = 2
