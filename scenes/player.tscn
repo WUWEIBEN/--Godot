@@ -2,9 +2,16 @@
 
 [ext_resource type="Script" uid="uid://dc7hnk2xp2x2w" path="res://scripts/player.gd" id="1_script"]
 [ext_resource type="SpriteFrames" uid="uid://dro7uv7ilswrg" path="res://resource/robot/robot_SpriteFrame.tres" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://celvk40ui50ut" path="res://resource/equipment/pick_axe.png" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
 size = Vector2(32, 48)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qhqgy"]
+radius = 40.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dqkch"]
+radius = 20.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1320421478]
 script = ExtResource("1_script")
@@ -19,3 +26,29 @@ position = Vector2(-3, -6)
 scale = Vector2(3, 3)
 sprite_frames = ExtResource("2_g2els")
 animation = &"idle"
+frame_progress = 0.60869133
+
+[node name="WeaponPivot" type="Node2D" parent="." unique_id=29997264]
+position = Vector2(1, 11)
+
+[node name="WeaponSprite" type="Sprite2D" parent="WeaponPivot" unique_id=1843127766]
+position = Vector2(8, 3.9999998)
+scale = Vector2(0.43895832, 0.42999995)
+texture = ExtResource("3_qhqgy")
+
+[node name="WeaponRange" type="Area2D" parent="." unique_id=306732193]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WeaponRange" unique_id=319514295]
+shape = SubResource("CircleShape2D_qhqgy")
+
+[node name="PickupRange" type="Area2D" parent="." unique_id=235797732]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PickupRange" unique_id=66646730]
+shape = SubResource("CircleShape2D_dqkch")
+
+[node name="HeadStack" type="Node2D" parent="." unique_id=1820353891]
+position = Vector2(0, -40)

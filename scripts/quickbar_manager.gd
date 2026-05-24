@@ -36,4 +36,13 @@ func use_slot(index: int) -> void:
 		ItemData.ItemType.CONSUMABLE:
 			# ?触发消耗品
 			pass
-	
+
+func swap_slots(index_a: int, index_b: int) -> void:
+	if index_a < 0 or index_a >= QUICKBAR_SIZE:
+		return
+	if index_b < 0 or index_b >= QUICKBAR_SIZE:
+		return
+	var temp = quickbar[index_a]
+	quickbar[index_a] = quickbar[index_b]
+	quickbar[index_b] = temp
+	quickbar_changed.emit()

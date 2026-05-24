@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://s2rx7vbnwt5x"]
+
+[ext_resource type="Script" uid="uid://dqo8cxnrhs4ca" path="res://scripts/collection_zone.gd" id="1_p1ii0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d6hfd"]
+size = Vector2(64, 64)
+
+[node name="CollectionZone" type="Area2D" unique_id=75395869 groups=["collection_zone"]]
+collision_layer = 0
+script = ExtResource("1_p1ii0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1921635998]
+shape = SubResource("RectangleShape2D_d6hfd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=243069398]

@@ -7,6 +7,6 @@
 script = ExtResource("1_dibto")
 item_name = "矿稿"
 description = "一把趁手的矿稿，能敲点什么"
-icon_color = Color(0.36659443, 0.36659467, 0.36659443, 1)
 icon = ExtResource("1_v6uea")
+weapon_offset = Vector2(16, 8)
 metadata/_custom_type_script = "uid://coosaygha8d54"

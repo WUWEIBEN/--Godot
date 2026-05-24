@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://c6k4w5c7q52o2" path="res://resource/map/Tilesets/Tilled Dirt.png" id="4_tipki"]
 [ext_resource type="Texture2D" uid="uid://c67kcgnyova58" path="res://resource/map/Tilesets/Water.png" id="5_85g3d"]
 [ext_resource type="Texture2D" uid="uid://iorwxmhrj0ap" path="res://resource/map/Tilesets/Bitmask references 1.png" id="6_choun"]
+[ext_resource type="PackedScene" uid="uid://d3kp1vdrujjx" path="res://scenes/ore_node.tscn" id="9_85g3d"]
+[ext_resource type="PackedScene" uid="uid://s2rx7vbnwt5x" path="res://scenes/collection_zone.tscn" id="10_choun"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a8y0u"]
 texture = ExtResource("5_85g3d")
@@ -769,6 +771,7 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="InventoryUI" parent="CanvasLayer" unique_id=1926822308 instance=ExtResource("3_sugp2")]
+visible = false
 offset_left = 850.0
 offset_top = 43.0
 offset_right = 1102.0
@@ -791,3 +794,13 @@ tile_set = SubResource("TileSet_trceg")
 
 [node name="Player" parent="." unique_id=581817222 instance=ExtResource("1_player")]
 position = Vector2(640, 360)
+
+[node name="OreNode" parent="." unique_id=823868658 groups=["resources"] instance=ExtResource("9_85g3d")]
+position = Vector2(729, 355)
+collision_layer = 3
+collision_mask = 3
+hp = 15
+max_hp = 15
+
+[node name="CollectionZone" parent="." unique_id=75395869 instance=ExtResource("10_choun")]
+position = Vector2(487, 353)

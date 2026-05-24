@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dspe4t5kxjjvm"]
+
+[ext_resource type="Script" uid="uid://coosaygha8d54" path="res://scripts/item_data.gd" id="1_2glbb"]
+
+[resource]
+script = ExtResource("1_2glbb")
+item_name = "矿石"
+description = "一个矿石"
+metadata/_custom_type_script = "uid://coosaygha8d54"

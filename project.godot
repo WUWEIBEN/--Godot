@@ -19,8 +19,8 @@ config/run/main_scene="res://scenes/main.tscn"
 [autoload]
 
 InventoryManager="*res://scripts/inventory_manager.gd"
-_mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
 QuickbarManager="*uid://usljfa6rgdkd"
+_mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
 
 [editor_plugins]
 
